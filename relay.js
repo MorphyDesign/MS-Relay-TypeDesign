@@ -64,6 +64,10 @@ const kerningTracking=document.querySelector("#kerning-tracking");
 const kerningCanvas=document.createElement("canvas");
 const kerningContext=kerningCanvas.getContext("2d");
 
+if(window.matchMedia("(min-width: 901px) and (max-width: 1599px)").matches){
+  kerningSize.value="100";
+}
+
 function renderKerning(){
   const weight=Number(kerningWeight.value);
   const requestedSize=Number(kerningSize.value);
