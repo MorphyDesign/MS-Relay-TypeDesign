@@ -833,3 +833,9 @@ body,body *{font-variant-ligatures:none!important;font-feature-settings:"ss01" 1
 
 .laptop-only-break{display:none}
 @media(min-width:901px) and (max-width:1599px){.laptop-only-break{display:block}}
+/* Increase continuous-reading text leading by 20% without changing display specimens. */
+.portfolio-profile{line-height:1.464}
+.wayfinding-copy p,.weight-system-copy p{line-height:1.536}
+.system-alignment-copy p,.transport-lines-copy p,.pictogram-poster-copy p{line-height:1.416}
+.relay-modules-intro{line-height:1.44}
+.numeral-study-copy p,.airport-study-copy p,.airport-sequence-copy p,.signage-applications-copy p,.directional-signage-copy p,.signage-overview-copy p{line-height:1.392}
