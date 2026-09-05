@@ -129,7 +129,7 @@ body{font-feature-settings:"ss01" 1}
 .tester{display:flex;min-height:70svh;flex-direction:column}
 .tester-text{flex:1;min-height:0;line-height:1.06;padding-bottom:clamp(70px,9.8vh,154px)}
 
-.relay-paired-testers{display:grid;grid-template-columns:1fr 1fr;min-height:100svh;border-bottom:var(--line)}
+.relay-paired-testers{display:grid;grid-template-columns:1fr 1fr;align-items:start;border-bottom:var(--line)}
 .relay-pair-unit{display:flex;min-width:0;flex-direction:column;border-right:var(--line)}
 .relay-pair-unit:last-child{border-right:0}
 .relay-pair-controls{display:grid;grid-template-columns:1.15fr repeat(3,1fr);gap:clamp(12px,1.4vw,26px);padding:16px var(--pad) 26px;border-bottom:var(--line);font-size:12px}
@@ -137,10 +137,10 @@ body{font-feature-settings:"ss01" 1}
 .relay-pair-controls label{display:grid;grid-template-columns:1fr auto;gap:8px}
 .relay-pair-controls label input{grid-column:1/-1}
 .relay-pair-controls output{font:inherit}
-.relay-pair-text{flex:1;padding:var(--pad);font-size:var(--pair-size,56px);font-weight:var(--pair-weight,400);line-height:1.08;letter-spacing:var(--pair-tracking,0);overflow-wrap:anywhere;outline:0}
+.relay-pair-text{padding:var(--pad);font-size:var(--pair-size,56px);font-weight:var(--pair-weight,400);line-height:1.3;letter-spacing:var(--pair-tracking,0);overflow-wrap:anywhere;outline:0}
 .relay-pair-text:focus{background:rgba(16,16,16,.035)}
-.tester-text,.tester-text *,.relay-pair-text,.relay-pair-text *{font-variant-ligatures:none!important;font-feature-settings:"liga" 0,"clig" 0,"dlig" 0,"hlig" 0,"rlig" 0!important}
-@media(max-width:900px){.relay-paired-testers{grid-template-columns:1fr}.relay-pair-unit{min-height:100svh;border-right:0;border-bottom:var(--line)}.relay-pair-unit:last-child{border-bottom:0}}
+.tester-text,.tester-text *,.relay-pair-text,.relay-pair-text *{font-variant-ligatures:none!important;font-feature-settings:"ss01" 1,"liga" 0,"clig" 0,"dlig" 0,"hlig" 0,"rlig" 0!important}
+@media(max-width:900px){.relay-paired-testers{grid-template-columns:1fr}.relay-pair-unit{border-right:0;border-bottom:var(--line)}.relay-pair-unit:last-child{border-bottom:0}.pair-text-more{display:none}}
 @media(max-width:650px){.relay-pair-controls{grid-template-columns:1fr;gap:14px}.relay-pair-text{font-size:clamp(28px,8vw,var(--pair-size,56px))}}
 
 /* Give the three construction studies one shared cap-height and optical centre. */
@@ -378,7 +378,7 @@ body,body *{font-variant-ligatures:none!important;font-feature-settings:"ss01" 1
 @media(max-width:650px){.system-alignment-copy,.transport-lines-copy,.relay-modules-intro,.numeral-study-copy,.airport-study-copy,.weight-system-copy,.pictogram-poster-copy{width:100%;margin-left:0;column-gap:14px}.pictogram-poster-copy{padding:8px var(--pad) 20px}.system-alignment-copy>p,.transport-lines-copy>p,.relay-modules-intro>p,.numeral-study-copy>p,.airport-study-copy>p,.weight-system-copy>p,.pictogram-poster-copy>p{width:100%;max-width:none;padding-left:0}}
 @media(max-width:650px){.core-wayfinding-set{padding-block:28px 38px}.core-wayfinding-copy{margin-bottom:46px}.core-wayfinding-row{grid-template-columns:62px minmax(0,1fr)}.core-wayfinding-label{font-size:7px}.core-wayfinding-uppercase p{font-size:9vw;line-height:1.04}.core-wayfinding-lowercase p{font-size:5.8vw;overflow-wrap:anywhere}.core-wayfinding-enclosed p{font-size:7vw}.core-wayfinding-numbers p{font-size:7.7vw}.core-wayfinding-arrows p{font-size:9.5vw}}
 @media(max-width:900px){.tester-text{overflow-wrap:anywhere;word-break:normal}.kerning-glyphs{overflow:hidden}.relay-cta a{overflow-wrap:anywhere}.portfolio-profile{min-height:auto}.signage-overview-vector{min-width:0}.section-heading h2{overflow-wrap:anywhere}}
-@media(max-width:650px){.site-header{gap:12px;padding-block:14px;font-size:12px}.kerning-source{font-size:14px}.kerning-glyph{height:calc(var(--k-size) * 1px + 34px)}.kerning-glyph-value{font-size:8px}.tester-text{padding-top:24px;padding-bottom:48px;line-height:1.08}.relay-pair-unit{min-height:62svh}.relay-pair-text{line-height:1.1}.relay-cta a{line-height:1}.signage-overview-vector{width:100%;height:auto}.signage-overview{overflow:hidden}}
+@media(max-width:650px){.site-header{gap:12px;padding-block:14px;font-size:12px}.kerning-source{font-size:14px}.kerning-glyph{height:calc(var(--k-size) * 1px + 34px)}.kerning-glyph-value{font-size:8px}.tester-text{padding-top:24px;padding-bottom:48px;line-height:1.08}.relay-cta a{line-height:1}.signage-overview-vector{width:100%;height:auto}.signage-overview{overflow:hidden}}
 
 /* Mobile fit audit: keep every composition inside the viewport without
    changing the desktop art direction. */
@@ -408,7 +408,6 @@ body,body *{font-variant-ligatures:none!important;font-feature-settings:"ss01" 1
   .transport-lines-list{gap:18px}
   .character-preview{height:42svh}
   .tester-text{max-height:40svh;overflow:hidden}
-  .relay-pair-text{max-height:42svh;overflow:hidden}
   .signage-applications,.directional-signage{--signage-type-size:5.6vw;--signage-icon-size:6.5vw}
   .signage-application-sign,.directional-sign{box-sizing:border-box;width:100%;max-width:100%;min-width:0;height:28vw;min-height:0;font-size:var(--signage-type-size)}
   .signage-application-sign span,.directional-sign span{min-width:0}
