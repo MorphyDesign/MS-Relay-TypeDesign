@@ -97,8 +97,8 @@ body{font-feature-settings:"ss01" 1}
 .system-alignment-display>div:nth-child(7)>span{letter-spacing:-.037em}
 .system-alignment-display>div:nth-child(8)>span,.system-alignment-display>div:nth-child(9)>span{font-size:.923em;letter-spacing:-.04em}
 .system-alignment-display>div:nth-child(10)>span{font-size:.962em;letter-spacing:-.026em}
-.relay-inline-circled-letters{display:inline-flex;align-items:center;gap:.015em;margin-inline:.025em;vertical-align:-.075em}.relay-inline-circled-letters svg{display:block;width:.86em;height:.86em;overflow:visible;fill:currentColor}
-@media(max-width:650px){.system-alignment{padding-block:28px 38px}.system-alignment-copy{grid-template-columns:1fr 1fr;gap:24px 18px;margin-bottom:46px}.system-alignment-copy p{font-size:10px;line-height:1.2}.system-alignment-display{font-size:15vw;line-height:1.04;letter-spacing:-.04em}.system-alignment-display>div{display:block;min-height:0;white-space:normal;overflow-wrap:anywhere}.system-alignment-display>div>span{display:inline;max-width:none;overflow-wrap:anywhere}}
+.relay-inline-circled-letters{display:inline-flex;align-items:center;gap:.015em;margin-inline:.025em;vertical-align:-.075em}.relay-inline-circled-letters svg{display:block;width:1em;height:1em;overflow:visible;fill:currentColor}
+@media(max-width:650px){.system-alignment{padding-block:28px 38px}.system-alignment-copy{grid-template-columns:1fr 1fr;gap:24px 18px;margin-bottom:46px}.system-alignment-copy p{font-size:10px;line-height:1.2}.system-alignment-display{font-size:15vw;line-height:1.04;letter-spacing:-.04em}.system-alignment-display>div{display:block;min-height:0;white-space:normal;overflow-wrap:anywhere}.system-alignment-display>div>span{display:inline;max-width:none;overflow-wrap:anywhere}.system-alignment-display>div:nth-child(8)>span,.system-alignment-display>div:nth-child(9)>span,.system-alignment-display>div:nth-child(10)>span{font-size:1em}}
 
 .weight-system{border-bottom:var(--line)}
 .weight-system-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,5vw,92px);width:50%;padding:clamp(26px,3vw,54px) var(--pad) clamp(44px,5vw,92px)}

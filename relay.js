@@ -461,11 +461,13 @@ document.querySelectorAll(".wayfinding-copy").forEach(section=>{
 const systemAlignmentLines=document.querySelectorAll(".system-alignment-display>div");
 
 function fitSystemAlignmentLines(){
+  const wraps=window.matchMedia("(max-width:650px)").matches;
   systemAlignmentLines.forEach(line=>{
     const text=line.querySelector("span");
     if(!text)return;
     text.style.transform="none";
     text.style.fontSize="";
+    if(wraps)return;
     const available=line.getBoundingClientRect().width;
     if(!available)return;
     let low=12;
